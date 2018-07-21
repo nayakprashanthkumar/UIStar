@@ -6,6 +6,8 @@ import { AppheaderComponent } from './components/appheader/appheader.component';
 import { AppfooterComponent } from './components/appfooter/appfooter.component';
 import { AppmenuComponent } from './components/appmenu/appmenu.component';
 import { AppsettingsComponent } from './components/appsettings/appsettings.component';
+import {AppLoginComponent} from './components/appLogin/applogin.component';
+import { AppRoutingModule } from "./app.routing.module";
 
 @NgModule({
   declarations: [
@@ -13,10 +15,12 @@ import { AppsettingsComponent } from './components/appsettings/appsettings.compo
     AppheaderComponent,
     AppfooterComponent,
     AppmenuComponent,
-    AppsettingsComponent
+    AppsettingsComponent,
+    AppLoginComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
