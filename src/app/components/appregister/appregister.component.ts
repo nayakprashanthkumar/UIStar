@@ -5,10 +5,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './appregister.component.html',
   styleUrls: ['./appregister.component.css']
 })
+
 export class AppRegisterComponent implements OnInit {
-
   constructor() { }
-
   ngOnInit() {
   }
 
