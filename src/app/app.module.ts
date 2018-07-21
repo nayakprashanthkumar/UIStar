@@ -6,8 +6,9 @@ import { AppheaderComponent } from './components/appheader/appheader.component';
 import { AppfooterComponent } from './components/appfooter/appfooter.component';
 import { AppmenuComponent } from './components/appmenu/appmenu.component';
 import { AppsettingsComponent } from './components/appsettings/appsettings.component';
-import {AppLoginComponent} from './components/appLogin/applogin.component';
-import { AppRoutingModule } from "./app.routing.module";
+import { AppRoutingModule,routingComponents } from "./app.routing.module";
+import {AppDashboardComponent} from "./components/appdashboard/appDashboard.component";
+import { AppRegisterComponent } from './components/appregister/appregister.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,9 @@ import { AppRoutingModule } from "./app.routing.module";
     AppfooterComponent,
     AppmenuComponent,
     AppsettingsComponent,
-    AppLoginComponent
+    routingComponents,
+    AppDashboardComponent,
+    AppRegisterComponent
   ],
   imports: [
     BrowserModule,
