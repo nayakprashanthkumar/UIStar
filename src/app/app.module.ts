@@ -2,17 +2,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
-import { AppheaderComponent } from './components/appheader/appheader.component';
-import { AppfooterComponent } from './components/appfooter/appfooter.component';
-import { AppmenuComponent } from './components/appmenu/appmenu.component';
-import { AppsettingsComponent } from './components/appsettings/appsettings.component';
+import { AppheaderComponent } from './components/common/appheader/appheader.component';
+import { AppfooterComponent } from './components/common/appfooter/appfooter.component';
+import { AppmenuComponent } from './components/common/appmenu/appmenu.component';
+import { AppsettingsComponent } from './components/common/appsettings/appsettings.component';
 import { AppRoutingModule,routingComponents } from "./app.routing.module";
-import {AppDashboardComponent} from "./components/appdashboard/appDashboard.component";
-import { AppRegisterComponent } from './components/appregister/appregister.component';
-import { AppaccountComponent } from './components/appaccount/appaccount.component';
-import { AppaboutusComponent } from './components/appaboutus/appaboutus.component';
-import { MyordersComponent } from './components/myorders/myorders.component';
-import { MyaddressesComponent } from './components/myaddresses/myaddresses.component';
+import {AppDashboardComponent} from "./components/distributor/appDashboard/appDashboard.component";
+import { AppRegisterComponent } from './components/common/appregister/appregister.component';
+import { MyProfileComponent } from './components/distributor/myprofile/myprofile.component';
+import { AppaboutusComponent } from './components/common/appaboutus/appaboutus.component';
+import { MyordersComponent } from './components/distributor/myorders/myorders.component';
+import { MyaddressesComponent } from './components/distributor/myaddresses/myaddresses.component';
 import { MypaymentoptionsComponent } from './components/mypaymentoptions/mypaymentoptions.component';
 import { MysecurityComponent } from './components/mysecurity/mysecurity.component';
 
@@ -26,7 +26,7 @@ import { MysecurityComponent } from './components/mysecurity/mysecurity.componen
     routingComponents,
     AppDashboardComponent,
     AppRegisterComponent,
-    AppaccountComponent,
+    MyProfileComponent,
     AppaboutusComponent,
     MyordersComponent,
     MyaddressesComponent,

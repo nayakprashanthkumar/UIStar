@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { diPublic } from '../../../../node_modules/@angular/core/src/render3/di';
+import { diPublic } from '@angular/core/src/render3/di';
 
 @Component({
   selector: 'app-applogin',

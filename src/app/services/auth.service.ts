@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {Http,Headers} from '@angular/http';
-import { promise } from '../../../node_modules/protractor';
-import { resolve } from '../../../node_modules/@types/q';
+import { promise } from 'protractor';
+import { resolve } from 'q';
 
 @Injectable({
   providedIn: 'root'
