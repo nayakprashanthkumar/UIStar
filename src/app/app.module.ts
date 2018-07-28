@@ -9,6 +9,12 @@ import { AppsettingsComponent } from './components/appsettings/appsettings.compo
 import { AppRoutingModule,routingComponents } from "./app.routing.module";
 import {AppDashboardComponent} from "./components/appdashboard/appDashboard.component";
 import { AppRegisterComponent } from './components/appregister/appregister.component';
+import { AppaccountComponent } from './components/appaccount/appaccount.component';
+import { AppaboutusComponent } from './components/appaboutus/appaboutus.component';
+import { MyordersComponent } from './components/myorders/myorders.component';
+import { MyaddressesComponent } from './components/myaddresses/myaddresses.component';
+import { MypaymentoptionsComponent } from './components/mypaymentoptions/mypaymentoptions.component';
+import { MysecurityComponent } from './components/mysecurity/mysecurity.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +25,13 @@ import { AppRegisterComponent } from './components/appregister/appregister.compo
     AppsettingsComponent,
     routingComponents,
     AppDashboardComponent,
-    AppRegisterComponent
+    AppRegisterComponent,
+    AppaccountComponent,
+    AppaboutusComponent,
+    MyordersComponent,
+    MyaddressesComponent,
+    MypaymentoptionsComponent,
+    MysecurityComponent
   ],
   imports: [
     BrowserModule,

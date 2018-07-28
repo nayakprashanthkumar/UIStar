@@ -28,7 +28,7 @@
     <ul class="sidebar-menu" data-widget="tree">
       <li class="header">MAIN NAVIGATION</li>
       <li class="active treeview menu-open">
-        <a href="#">
+        <a routerLink="/" routerLinkActive="active">
           <i class="fa fa-dashboard"></i>
           <span>Dashboard</span>
         </a>
@@ -57,10 +57,28 @@
         </ul>
       </li>
       <li class="active treeview menu-open">
-        <a href="#">
+        <a routerLink="/account">
           <i class="fa fa-dashboard"></i>
-          <span>My Account</span>
+          <span>Your Account</span>
         </a>
+        <ul class="treeview-menu">
+            <li>
+              <a routerLink="/account/orders">
+                <i class="fa fa-circle-o"></i> Your Orders</a>
+            </li>
+            <li>
+              <a routerLink="/account/addresses">
+                <i class="fa fa-circle-o"></i> Your Addresses</a>
+            </li>
+            <li>
+              <a routerLink="/account/payments">
+                <i class="fa fa-circle-o"></i> Payment Options</a>
+            </li>
+            <li>
+                <a routerLink="/account/security">
+                  <i class="fa fa-circle-o"></i> Login & Security</a>
+              </li>
+          </ul>
       </li>
       <li>
         <li class="active treeview menu-open">
