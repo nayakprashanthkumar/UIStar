@@ -15,6 +15,9 @@ import { MyordersComponent } from './components/distributor/myorders/myorders.co
 import { MyaddressesComponent } from './components/distributor/myaddresses/myaddresses.component';
 import { MypaymentoptionsComponent } from './components/mypaymentoptions/mypaymentoptions.component';
 import { MysecurityComponent } from './components/mysecurity/mysecurity.component';
+import { ConsoleComponent } from './components/admin/console/console.component';
+import { DashboardComponent } from './components/admin/dashboard/dashboard.component';
+import { BusinesslinkComponent } from './components/distributor/businesslink/businesslink.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import { MysecurityComponent } from './components/mysecurity/mysecurity.componen
     MyordersComponent,
     MyaddressesComponent,
     MypaymentoptionsComponent,
-    MysecurityComponent
+    MysecurityComponent,
+    ConsoleComponent,
+    DashboardComponent,
+    BusinesslinkComponent
   ],
   imports: [
     BrowserModule,

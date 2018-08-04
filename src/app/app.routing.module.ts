@@ -1,11 +1,13 @@
 import {NgModule, Component} from "@angular/core"
 import {Routes,RouterModule} from "@angular/router"
-import { AppLoginComponent } from "./components/appLogin/applogin.component"
-import {AppRegisterComponent} from "./components/appregister/appregister.component"
-import { AppDashboardComponent } from "./components/appDashboard/appDashboard.component"
-import { MyProfileComponent } from "./components/myprofile/myprofile.component"
-import {MyaddressesComponent} from "./components/myaddresses/myaddresses.component"
-import {MyordersComponent} from "./components/myorders/myorders.component"
+import { AppLoginComponent } from "./components/common/appLogin/applogin.component"
+import {AppRegisterComponent} from "./components/common/appregister/appregister.component"
+import { AppDashboardComponent } from "./components/distributor/appDashboard/appDashboard.component"
+import { MyProfileComponent } from "./components/distributor/myprofile/myprofile.component"
+import {MyaddressesComponent} from "./components/distributor/myaddresses/myaddresses.component"
+import {MyordersComponent} from "./components/distributor/myorders/myorders.component"
+import {DashboardComponent} from "./components/admin/dashboard/dashboard.component"
+import {BusinesslinkComponent} from "./components/distributor/businesslink/businesslink.component"
 
 const routes: Routes=[
     { path: '', component: AppDashboardComponent},
@@ -15,6 +17,8 @@ const routes: Routes=[
     { path: 'account/addresses', component: MyaddressesComponent },
     { path: 'account/orders', component: MyordersComponent },
     { path: 'account/myprofile', component: MyProfileComponent },
+    { path: 'account/businesslink', component: BusinesslinkComponent },
+    { path: 'admin/dashboard', component: DashboardComponent },
     { path: '**', redirectTo: '' }
 ]
 
@@ -30,4 +34,6 @@ export const routingComponents= [AppLoginComponent,
     AppRegisterComponent,
     MyaddressesComponent,
     MyordersComponent,
-    MyProfileComponent]
+    MyProfileComponent,
+    DashboardComponent,
+    BusinesslinkComponent]
